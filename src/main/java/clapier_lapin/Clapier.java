@@ -35,7 +35,6 @@ public class Clapier {
 			enfant.pere = this;
 		}
 		
-		
 		/*
 		Je n'ai pas voulu changer votre code 
 		Parce qu'on avait utilisé les attributions 
@@ -119,9 +118,9 @@ public class Clapier {
 			if(oneStepIterator == twoStepIterator) {
 				// Ce contrôle est très important
 				// Si on combine ces deux "if" comme if(oneStepIterator == twoStepIterator && is_l2_on_the_cyclic_path) 
-				// Cela causerait un boucle infini
+				// Cela générerait un boucle infini
 				if(is_l2_on_the_cyclic_path) return true;
-				// Si les deux iterator se croise mais "l2" n'est pas sur le chemin
+				// Si les deux iterators se croise mais "l2" n'est pas sur le chemin
 				// On retourne simplement false
 				return false;
 			}
@@ -136,10 +135,10 @@ public class Clapier {
 	
 	/*
 	  
-	 					 		Lap1 								Lap9 ( Ce Lapin n'a aucune relation )
-	 			Lap2			Lap3		Lap4
-	 						Lap5    Lap6        Lap7
-	 												Lap8
+	 					Lap1 					Lap9 ( Ce Lapin n'a aucune relation )
+	 			Lap2		Lap3		Lap4
+	 				    Lap5    Lap6           Lap7
+	 								Lap8
 	 												
 	 	Lap1 ==>	 père de 1,3,4
 	 	Lap2 ==>	 aucun enfant

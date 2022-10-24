@@ -207,7 +207,7 @@ public class ClapierTest {
 
 	}
 	
-	// One_Family_Tree_Has_More
+	// Two_Family_Tree_Has_More
 	@Test
 	public void estAncestre_whenThereIsTwoDegreeRelationshipAndFamilyTreeHasMoreElementThanParameterList_returnsSetAsSubsetOfSetOfChildren() {
 		Clapier.Lapin lap1 = new Clapier.Lapin();

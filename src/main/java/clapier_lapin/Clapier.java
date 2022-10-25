@@ -59,8 +59,7 @@ public class Clapier {
 		public Set<Lapin> getAllLevelChildren(){
 			Set<Lapin> set_a_retourner = new HashSet<>();
 			
-			Queue<Lapin> q = new LinkedList<>();
-			q.addAll(enfants);
+			Queue<Lapin> q = new LinkedList<>(enfants);
 			
 			while(!q.isEmpty()) {
 				Lapin front = q.poll();

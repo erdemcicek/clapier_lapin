@@ -78,9 +78,10 @@ public class Clapier {
 	}
 	
 	public static boolean estAncestre(Lapin enfant, Lapin ancestre) {
+		// Solution with Iterative Approach
+		
 		if(enfant == null || ancestre == null) return false;
 		
-		// Solution with Iterative Approach
 		while(enfant.pere != null) {
 			if(enfant.pere == ancestre) return true;
 			enfant = enfant.pere;
@@ -89,6 +90,9 @@ public class Clapier {
 		return false;
 		
 		/*  Solution with Recursive Approach
+		
+		if(enfant == null || ancestre == null) return false;
+		
 		if(enfant.pere == ancestre) return true;
 		
 		return estAncestre(enfant.pere, ancestre);
@@ -117,9 +121,9 @@ public class Clapier {
 			if(oneStepIterator == twoStepIterator) {
 				// Ce contrôle est très important
 				// Si on combine ces deux "if" comme if(oneStepIterator == twoStepIterator && is_l2_on_the_cyclic_path) 
-				// Cela générerait un boucle infini
+				// Cela générerait un boucle infini dans le cas où les iterators se croisent mais "l2" n'est pas sur le cercle cyclique
 				if(is_l2_on_the_cyclic_path) return true;
-				// Si les deux iterators se croise mais "l2" n'est pas sur le chemin
+				// Si les deux iterators se croisent mais "l2" n'est pas sur le chemin
 				// On retourne simplement false
 				return false;
 			}

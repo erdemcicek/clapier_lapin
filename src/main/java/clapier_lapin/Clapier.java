@@ -126,6 +126,8 @@ public class Clapier {
 				// Si les deux iterators se croisent mais "l2" n'est pas sur le chemin
 				// On retourne simplement false
 				return false;
+				// ou bien, on peut écrire directement 
+				// return is_l2_on_the_cyclic_path;
 			}
 		}
 		
